@@ -30,7 +30,7 @@ jobs:
           
       - name: Execute
         run: |
-          java Hello.class 
+          java Hello
           
       # Runs a single command using the runners shell
       - name: Run a one-line script
