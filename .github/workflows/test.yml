@@ -6,13 +6,18 @@ on:
   workflow_dispatch:
   
 jobs:
-  build:
+    
+  job1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       -  name: Compile
          run: |
             javac Hello.java
-      -   name: Exe
-          run:  
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      -  name: Exe
+         run: |
             java Hello
