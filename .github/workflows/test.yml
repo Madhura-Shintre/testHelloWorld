@@ -15,5 +15,5 @@ jobs:
          run: |
             javac Hello.java
       -   name: Exe
-          run: | 
+          run:  
             java Hello
