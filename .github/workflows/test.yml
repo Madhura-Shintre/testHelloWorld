@@ -15,9 +15,11 @@ jobs:
          run: |
             javac Hello.java
   job2:
-    runs-on: ubuntu-latest
-    steps:
+   needs: job1
+   runs-on: ubuntu-latest
+   steps:
       - uses: actions/checkout@v2
       -  name: Exe
          run: |
             java Hello
+   
