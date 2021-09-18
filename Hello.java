@@ -10,7 +10,7 @@ public class Hello{
 
         System.out.println( "Hello World branch 1" );
 
-		int a=10;
+		
 		int c=30;
         System.out.println( "Hello World branch 2s" );
 
